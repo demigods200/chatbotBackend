@@ -27,7 +27,7 @@ interface SidebarProps {
 
 export const Sidebar = ({ onNewChat, onClearHistory, conversations, onSelectConversation, currentConversationId }: SidebarProps) => {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
-  const { isAuthenticated, logout, user } = useAuth();
+  const { logout, user } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = () => {
