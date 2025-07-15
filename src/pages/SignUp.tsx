@@ -10,7 +10,6 @@ const SignUp = () => {
   const [error, setError] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const navigate = useNavigate();
-  const { login } = useAuth();
 
   const validateEmail = (email: string) => {
     // Simple but effective email regex
